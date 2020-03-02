@@ -6,22 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-<div class="wrapper">
+    <div class="wrapper">
         <div class="content page-content">
-            <header>
-
+            <!-- start header -->
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-inner">
+                            <div class="header__logo">
+                                <a href="#">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="header__text">
+                                Request a call
+                                <a class="header__phone" href="tel:08000000">0 800 0000</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="container">
+                        <nav class="menu">
+                            <div class="menu__btn">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <ul class="menu__list">
+                                <li>
+                                    <a href="#" class="active">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Why us?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Our projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        How we work
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Reviews
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </header>
+            <!-- end header -->
+            <!-- start calculations -->
+            <section class="calculations" style="background-image: url(images/calculate-bg.jpg);">
+                <div class="container">
+                    <div class="calculations__inner">
+                        <div class="calculations__inner-content">
+                            <div class="content__title">
+                                Custom Kitchens
+                            </div>
+                            <div class="content__text">
+                                <span class="icon-checkmark">Outstanding quality</span>
+                                <span class="icon-checkmark">Attention to detail</span>
+                                <span class="icon-checkmark">Exceptional craftsmanship</span>
+                                <span class="icon-checkmark">Finest materials</span>
+                            </div>
+                        </div>
+                        <div class="calculations__inner-costs">
+                            <div class="costs__title">
+                                Calculate Costs
+                            </div>
+                            <div class="costs__text">
+                                <span>Leave Request To Calculate</span> 
+                                <span>The Average Costs</span> 
+                                <span>Of Your Kitchen</span>
+                            </div>
+                            <form>
+                                <input type="text" placeholder="Your name" required>
+                                <input type="text" placeholder="Phone number" required>
+                                <button type="submit">Calculate Costs</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end calculations -->
         </div>
         <footer>
-            
+
         </footer>
     </div>
-   
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
