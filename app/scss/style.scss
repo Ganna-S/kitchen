@@ -83,12 +83,13 @@
     }
     &-costs {
       margin-top: 210px;
+      margin-right: 60px;
       border: 1px solid rgb(204, 204, 204);
       background-color: rgba(247, 245, 245, 0.8);
       box-shadow: 0px 28px 61.56px 14.44px rgba(43, 29, 10, 0.14);
-      max-width: 380px;
+      max-width: 320px;
       text-align: center;
-      padding: 45px 40px;
+      padding: 50px 35px;
       .costs__title {
         font-size: 20px;
         font-weight: 600;
@@ -105,13 +106,13 @@
       }
       form {
         input {
-          min-width: 300px;
+          min-width: 260px;
           min-height: 40px;
           margin-bottom: 10px;
           padding: 0 15px;
         }
         button {
-          min-width: 300px;
+          min-width: 260px;
           min-height: 40px;
           background-color: #0e3326;
           color: #fff;
@@ -124,4 +125,96 @@
   }
 }
 //end calculations
+//start choose
+.choose {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+}
+.title {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+.choose__inner {
+  width: 300px;
+  display: flex;
+  &-item {
+    text-align: center;
+    margin-left: 30px;
+    img {
+      border-radius: 50%;
+      border: 5px solid #fff;
+    }
+    & + .choose__inner-item {
+      margin-left: 150px;
+    }
+    .choose-item__title {
+      font-size: 24px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #bcfff0;
+      padding-top: 30px;
+      padding-bottom: 15px;
+    }
+    .choose-item__text {
+      color: #fff;
+    }
+  }
+}
+//end choose
+//start projects
+.projects__title {
+  color: #0e3326;
+  padding-top: 80px;
+}
+.projects__slider {
+  margin-bottom: 60px;
+  &-item {
+    text-align: center;
+    .slider-item__title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    img {
+      margin-left: 30px;
+      border-radius: 2%;
+      border: 5px solid #6bcdb9;
+      margin-bottom: 35px;
+    }
+    a {
+      text-transform: uppercase;
+      border: 1px solid #0e3326;
+      padding: 10px 25px;
+    }
+  }
+}
+ul.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  margin-top: 60px;
+  li {
+    margin: 0 10px;
+    height: 12px;
+    width: 12px;
+    background-color: #c0d6ce;
+    border-radius: 50%;
+  }
+}
+
+.slick-dots li button {
+  display: none;
+}
+.slick-dots li.slick-active {
+  background-color: #217b6d;
+}
+//end projects
 //end footer
