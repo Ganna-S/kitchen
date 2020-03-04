@@ -217,4 +217,143 @@ ul.slick-dots {
   background-color: #217b6d;
 }
 //end projects
+//start work
+.work {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+}
+.work__title {
+  color: #0e3326;
+  padding-top: 120px;
+}
+.work__inner {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    margin-top: 80px;
+    text-align: center;
+    max-width: 220px;
+    span {
+      font-size: 105px;
+      color: #6bcdb9;
+      border: 3px dashed #6bcdb9;
+      border-radius: 50%;
+      padding: 25px 30px;
+      &:hover {
+        color: rgb(10, 148, 125);
+        border: 3px dashed rgb(10, 148, 125);
+      }
+    }
+    .work__text {
+      font-size: 26px;
+      margin-top: 90px;
+      font-weight: 600;
+    }
+  }
+}
+//end work
+//start customers
+.customers {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+}
+.customers__slider-item {
+  display: flex !important;
+  img {
+    margin-left: 30px;
+    border-radius: 2%;
+    border: 5px solid #6bcdb9;
+    margin-bottom: 35px;
+  }
+  .customers__slider-feedback {
+    margin-left: 60px;
+    img {
+      border: 5px solid #6bcdb9;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+    .feedback__text {
+      margin-top: 40px;
+      color: #fff;
+      text-align: center;
+      max-width: 380px;
+    }
+  }
+}
+//end customers
+//start contacts
+.contacts {
+  position: relative;
+  margin-bottom: 80px;
+}
+.contacts__title {
+  color: #0e3326;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.contact__form {
+  position: absolute;
+  top: 230px;
+  right: 200px;
+  max-width: 320px;
+  background-color: #fff;
+  text-align: center;
+  padding: 35px 25px;
+  .contact__form-title {
+    color: #0e3326;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+  input {
+    min-width: 260px;
+    min-height: 40px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+  }
+  .form__message {
+    input {
+      min-height: 95px;
+    }
+  }
+  button {
+    margin-top: 15px;
+    min-width: 95px;
+    min-height: 40px;
+    background-color: #0e3326;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
+//end contacts
+//start footer
+.footer {
+  height: 90px;
+  background-color: #aceae2;
+  opacity: 0.902;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0;
+  .footer__text {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .footer-btn {
+    padding: 6px 12px;
+    background-color: #0e3326;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+}
 //end footer
