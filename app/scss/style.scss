@@ -1,14 +1,18 @@
 @import "global";
+@import "media";
 @import "fonts";
 
 //start header
+.header {
+  height: 90px;
+}
 .header__top {
   background-color: #fff;
   &-inner {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-    .header__text {
+    padding: 25px 0;
+    .text {
       font-size: 16px;
       font-weight: 600;
       margin-top: 10px;
@@ -23,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
+  padding: 35px 20px;
 }
 .menu__list {
   li {
@@ -54,7 +58,8 @@
   background-size: cover;
   background-position: center;
   min-height: 700px;
-  margin-top: -90px;
+  margin-top: 2px;
+  background-color: #fff;
   .calculations__inner {
     display: flex;
     justify-content: space-between;
@@ -183,10 +188,11 @@
       margin-bottom: 30px;
     }
     img {
-      margin-left: 30px;
+      display: block;
+      margin: 0 auto;
       border-radius: 2%;
       border: 5px solid #6bcdb9;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
     a {
       text-transform: uppercase;
@@ -264,13 +270,14 @@ ul.slick-dots {
 .customers__slider-item {
   display: flex !important;
   img {
-    margin-left: 30px;
+    display: block;
+    margin: 0 auto;
     border-radius: 2%;
     border: 5px solid #6bcdb9;
     margin-bottom: 35px;
   }
   .customers__slider-feedback {
-    margin-left: 60px;
+    text-align: center;
     img {
       border: 5px solid #6bcdb9;
       border-radius: 50%;
@@ -289,21 +296,36 @@ ul.slick-dots {
 //start contacts
 .contacts {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: -3px;
+}
+.map{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 .contacts__title {
   color: #0e3326;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 .contact__form {
   position: absolute;
-  top: 230px;
+  top: 200px;
   right: 200px;
   max-width: 320px;
-  background-color: #fff;
+  background-color: #f8fdfb;
   text-align: center;
   padding: 35px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 22px 36.8px 3.2px rgba(43, 29, 10, 0.21);
   .contact__form-title {
     color: #0e3326;
     font-size: 20px;
@@ -336,7 +358,6 @@ ul.slick-dots {
 //end contacts
 //start footer
 .footer {
-  height: 90px;
   background-color: #aceae2;
   opacity: 0.902;
 }
@@ -349,6 +370,7 @@ ul.slick-dots {
     font-weight: 600;
   }
   .footer-btn {
+    max-width: 120px;
     padding: 6px 12px;
     background-color: #0e3326;
     color: #fff;
