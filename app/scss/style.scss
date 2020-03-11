@@ -58,7 +58,7 @@
   background-size: cover;
   background-position: center;
   min-height: 700px;
-  margin-top: 2px;
+  margin-top: 10px;
   background-color: #fff;
   .calculations__inner {
     display: flex;
@@ -142,6 +142,7 @@
   padding-bottom: 50px;
   font-size: 40px;
   font-weight: 700;
+  line-height: 36px;
   text-align: center;
   color: #fff;
   text-transform: capitalize;
@@ -198,6 +199,11 @@
       text-transform: uppercase;
       border: 1px solid #0e3326;
       padding: 10px 25px;
+      &:hover{
+        background-color: #0e3326;
+        color: #fff;
+        border: none;
+      }
     }
   }
 }
@@ -253,9 +259,11 @@ ul.slick-dots {
       }
     }
     .work__text {
-      font-size: 26px;
+      font-size: 20px;
+      line-height: 28px;
       margin-top: 90px;
       font-weight: 600;
+      padding: 0px 20px;
     }
   }
 }
