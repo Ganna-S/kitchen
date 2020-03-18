@@ -199,7 +199,7 @@
       text-transform: uppercase;
       border: 1px solid #0e3326;
       padding: 10px 25px;
-      &:hover{
+      &:hover {
         background-color: #0e3326;
         color: #fff;
         border: none;
@@ -306,18 +306,18 @@ ul.slick-dots {
   position: relative;
   margin-bottom: -3px;
 }
-.map{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
+.map {
+  overflow: hidden;
+  padding-bottom: 41.25%;
+  position: relative;
+  height: 0;
 }
-.map iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 .contacts__title {
   color: #0e3326;
@@ -349,7 +349,8 @@ ul.slick-dots {
   }
   .form__message {
     input {
-      min-height: 95px;
+      padding-top: 15px;
+      padding-bottom: 65px;
     }
   }
   button {
