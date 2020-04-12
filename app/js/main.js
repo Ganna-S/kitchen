@@ -25,8 +25,17 @@ $(function () {
     });
 
     $('.menu__btn').on('click', function () {
-        $('.header__menu').slideToggle();
+        $('.menu').slideToggle();
     });
-    
+
     new WOW().init();
+
+    $(document).ready(function () {
+        $("#menu").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 500);
+        });
+    });
 });
